@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+ <style>
+    *{
+        border-radius:25px;
+        font-family: "Poppins", sans-serif; 
+        
+    }
+    nav {
+        background-color: darksalmon;
+        text-align: center;
+        color: white;
+        padding: 2px;
+        margin: 2px;
+    }
+    #choice{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        flex-direction:row;
+    }
+    #link_id{
+        text-decoration: none;
+    }
+    .south,
+    .north,
+    .snackes,
+    .italian {
+        display: flex;
+        width:500px;
+        height: 300px;
+        color: white;
+        align-items:center;
+        justify-content: center;
+        margin:30px 30px 30px 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+        border: 1px solid;
+
+        /**padding-left: 20px;
+        margin-top: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        align-items: center;**/
+    }
+    #contact_us_id{
+        text-decoration:none;
+        color:white;
+    }
+ 
+   
+    .contact {
+        background-color: darksalmon;
+        color: white;
+        height: 500px;
+        width: 100%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    @media(max-width:600px){
+    .south,
+    .north,
+    .snackes,
+    .italian {
+        width:500px;
+    }
+    #img_id{
+        width:350px;
+    }}
+   
+</style>
+   
+<body>
+
+<nav>
+    <h1>REESTAR</h1>
+    <h3><a href="#contact_us" id="contact_us_id">Contact us</h3></a>
+</nav>
+
+<div id="choice">
+    <div class="south"><a href="south.html" id="link_id">
+        <img src="assets\demo_dosa.jpg" height="200px" width="400px" id="img_id">
+        <h2 id="name">SOUTH INDIAN DISHES</h2>
+    </div></a>
+
+    <div class="north"><a href="north.html" id="link_id" >
+        <img src="assets\demo_naan.jpg" height="200px" width="400px" id="img_id" >
+        <h2 id="name">NORTH INDIAN DISHES</h2>
+    </div></a>
+
+    <div class="italian"><a href="italian.html" id="link_id">
+        <img src="assets\demo_pasta.jpg" height="200px" width="400px" id="img_id">
+        <h2 id="name">ITALIAN DISHES</h2>
+    </div></a>
+
+    <div class="snackes"><a href="snackes.html" id="link_id">
+        <img src="assets\demo_samosa.jpg" height="200px" width="400px" id="img_id">
+        <h2 id="name">SNACKES</h2>
+    </div></a>
+
+</div>
+
+<div class="contact" id="contact_us">
+    <center>
+
+        <h1>CONTACT US</h1>
+        <table>
+            <tr>
+                <td>Hotel name:</td>
+                <td>Reestar</td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td>123, Anna nagar,Chennai</td>
+            </tr>
+            <tr>
+                <td>Phone no:</td>
+                <td>1234567890</td>
+            </tr>
+            <tr>
+                <td>Whatsapp no:</td>
+                <td>1234567890</td>
+            </tr>
+        </table>
+    </center>
+</div>
+</body>
+</html>
